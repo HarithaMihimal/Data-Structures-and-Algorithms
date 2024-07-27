@@ -31,18 +31,21 @@ void quicksort(int arr[], int low, int high) {
     stack[++top] = low;
     stack[++top] = high;
  
-    while (top >= 0) {
+    while (top >= 0) 
+    {
         high = stack[top--];
         low = stack[top--];
  
         int p = partition(arr, low, high);
  
-        if (p - 1 > low) {
+        if (p - 1 > low) 
+        {
             stack[++top] = low;
             stack[++top] = p - 1;
         }
  
-        if (p + 1 < high) {
+        if (p + 1 < high) 
+        {
             stack[++top] = p + 1;
             stack[++top] = high;
         }
