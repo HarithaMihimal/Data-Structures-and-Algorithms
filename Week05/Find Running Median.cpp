@@ -35,10 +35,10 @@ int main(){
 	vector<int> arr={35,7,12,5,2,73,6,8,19,3,56};
 	vector<int> arr2;
 	for(int i=0;i<arr.size();i++){
-	    arr2.push_back(arr[i]);
-	    
-	       insertion(arr2);
-	       cout<<"Median value is "<<get_median(arr2)<<endl;
+		
+	   	arr2.push_back(arr[i]);
+	    	insertion(arr2);
+	       	cout<<"Median value is "<<get_median(arr2)<<endl;
 	    
 	    
 	}
