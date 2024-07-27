@@ -1,7 +1,5 @@
 #include <vector>
 #include <iostream>
-
-
 using namespace std;
 
 void insertion(vector <int> &arr){
@@ -25,6 +23,7 @@ void insertion(vector <int> &arr){
 		cout<<"    ";
     
 }
+
 float get_median(vector<int> arr2){
     if (arr2.size()%2==1)
     {
@@ -46,5 +45,4 @@ int main(){
 	       	cout<<"Median value is "<<get_median(arr2)<<endl;
 	}
 
-	
 }
