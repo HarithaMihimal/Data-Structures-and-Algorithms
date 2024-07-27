@@ -2,15 +2,16 @@
 #include <chrono>
 #include<ctime>
 #include<cstdlib>
-
 using namespace std;
 
 
 int partitions(int arr[],int start,int end){
     int pivot =arr[end];
     int i=start-1;
-    for(int j=start;j<=end-1;j++){
-        if(arr[j]<pivot){
+    for(int j=start;j<=end-1;j++)
+    {
+        if(arr[j]<pivot)
+        {
             i++;
             int temp =arr[i];
             arr[i]=arr[j];
@@ -18,10 +19,10 @@ int partitions(int arr[],int start,int end){
         }
     }
     i++;
-      int temp =arr[i];
-            arr[i]=arr[end];
-            arr[end]=temp;
-        return i;
+    int temp =arr[i];
+    arr[i]=arr[end];
+    arr[end]=temp;
+    return i;
 }
 void quicksort(int arr[],int start,int end){
     if(end<=start){
