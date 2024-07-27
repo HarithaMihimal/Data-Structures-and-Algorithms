@@ -6,17 +6,20 @@ using namespace std;
 
 void insertion(vector <int> &arr){
     int num,j;
-	for(int i=0;i<arr.size();i++){
+	for(int i=0;i<arr.size();i++)
+	{
 		num=arr[i];
 		j=i-1;
-		while(j>=0 && arr[j]>num){
+		while(j>=0 && arr[j]>num)
+		{
 			arr[j+1]=arr[j];
 			--j;
 		}
 		arr[j+1]=num;
 	
 	}
-		for(int k=0;k<arr.size();k++){
+		for(int k=0;k<arr.size();k++)
+		{
 			cout<<arr[k]<<" ";
 		}
 		cout<<"    ";
