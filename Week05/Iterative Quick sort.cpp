@@ -57,29 +57,29 @@ void printArray(int arr[], int size) {
         cout << arr[i] << " ";
 }
 
-int main()
+int main(){   
 
-{   
-
-    for(int j=1000;j<=10000;j+=2000){
-    const int sizes=j;
-    int arr[sizes];
-    srand(time(NULL));
-    for(int i=0;i<sizes;i++){
-        arr[i]=rand()%100;
+    for(int j=1000;j<=10000;j+=2000)
+    {
+        const int sizes=j;
+        int arr[sizes];
+        srand(time(NULL));
+        for(int i=0;i<sizes;i++)
+        {
+            arr[i]=rand()%100;
+    
+        }
+    
+    
+         auto t_start = chrono::high_resolution_clock::now();
+    
+         quicksort(arr,0,sizes-1);
+    
+        auto t_end = chrono::high_resolution_clock::now();
+        auto duration = chrono::duration_cast<chrono::microseconds>(t_end - t_start).count();
+        cout << "Size of array =\t" << j <<"\tTime taken = "<<duration<<endl;
 
     }
-
-
-     auto t_start = chrono::high_resolution_clock::now();
-
-     quicksort(arr,0,sizes-1);
-
-    auto t_end = chrono::high_resolution_clock::now();
-    auto duration = chrono::duration_cast<chrono::microseconds>(t_end - t_start).count();
-    cout << "Size of array =\t" << j <<"\tTime taken = "<<duration<<endl;
-
-}
 
 return 0;
 }
