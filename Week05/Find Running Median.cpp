@@ -1,11 +1,10 @@
-
-#include <iostream>
 #include <vector>
+#include <iostream>
+
 
 using namespace std;
 
 void insertion(vector <int> &arr){
-    
     int num,j;
 	for(int i=0;i<arr.size();i++){
 		num=arr[i];
