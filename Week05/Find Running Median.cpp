@@ -26,10 +26,12 @@ void insertion(vector <int> &arr){
     
 }
 float get_median(vector<int> arr2){
-    if (arr2.size()%2==1){
+    if (arr2.size()%2==1)
+    {
         return arr2[(arr2.size()-1)/2.0];
     }
-    else{
+    else
+    {
         return ((arr2[arr2.size()/2]+arr2[(arr2.size()/2)-1])/2.0);
     }
 }
