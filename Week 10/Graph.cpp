@@ -4,6 +4,10 @@ using namespace std;
 
 struct Node{
     int label;
+
+    // A node will 2 entities
+    //1. data type int called label
+    //2. a int type list called neighbours
     list<int> neighbours;
 
 
